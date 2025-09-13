@@ -30,3 +30,6 @@ This project highlights the practical use of WebSocket technology combined with 
 
 ##OUTPUT:
 
+<img width="1920" height="954" alt="Image" src="https://github.com/user-attachments/assets/b2e5ad1f-f800-4eff-9dc1-ba1dcc0bb9ea" />
+
+<img width="1920" height="938" alt="Image" src="https://github.com/user-attachments/assets/95081add-66bc-46aa-8cbe-418c808b59cb" />
