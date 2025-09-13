@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  margin-bottom: 24px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #b39ddb55;
+  padding: 12px 18px;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 18px;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  border-radius: 8px;
+  background: #fff6fa;
+  color: #7c43bd;
+  box-shadow: 0 2px 8px #f0629277 inset;
+  transition: box-shadow 0.3s;
+}
+input[type="text"]:focus {
+  box-shadow: 0 2px 12px #ba68c855 inset, 0 0 4px 2px #ce93d8aa;
+}
+
+button {
+  background: linear-gradient(45deg, #42e695, #3bb2b8, #f54ea2, #ff7676);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 26px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 2px 14px #81d4fa80;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+button:hover {
+  transform: scale(1.08) rotate(-2deg);
+  background: linear-gradient(105deg, #ffbfea, #a1c4fd 80%);
+  box-shadow: 0 2px 20px #ba68c8ad;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0 2px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  min-height: 260px;
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 18px;
+  box-shadow: 0 2px 28px #ba68c825;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  overflow-y: auto;
+}
+
+ul li {
+  max-width: 80%;
+  word-break: break-word;
+  margin: 10px 0 0 0;
+  padding: 11px 18px;
+  border-radius: 18px 12px 12px 18px;
+  font-size: 1.08em;
+  background: linear-gradient(92deg, #ffdde1 10%, #ee9ca7 100%);
+  color: #964caf;
+  box-shadow: 0 2px 8px #e57373aa;
+  align-self: flex-start;
+  animation: popIn 0.28s cubic-bezier(.44,2.08,.48,.75);
+}
+
+ul li:nth-child(even) {
+  background: linear-gradient(92deg, #a1c4fd 10%, #c2e9fb 100%);
+  color: #44469a;
+  align-self: flex-end;
+  border-radius: 12px 18px 18px 12px;
+  box-shadow: 0 2px 8px #81d4fa99;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  form, ul {
+    max-width: 99vw;
+    min-width: 0;
+    padding: 6px;
+  }
+  ul li {
+    font-size: 0.99em;
+    padding: 8px 10px;
+  }
+}
